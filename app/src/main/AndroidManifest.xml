@@ -14,10 +14,10 @@
         android:theme="@style/Theme.CleanArchitecture"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.ui.activity.MainActivity"
+            android:name="com.example.presentation.ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="androidРазделить проект с Clean Architecture на модули..intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

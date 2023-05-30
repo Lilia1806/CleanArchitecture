@@ -7,4 +7,5 @@ plugins {
     id("com.google.dagger.hilt.android") version "2.45" apply false
     //Safeargs
     id ("androidx.navigation.safeargs.kotlin") version "2.5.3" apply false
+    id("org.jetbrains.kotlin.jvm") version "1.8.20" apply false
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/authUserFragment">
+
+    <fragment
+        android:id="@+id/authUserFragment"
+        android:name="com.example.presentation.ui.fragments.auth.AuthUserFragment"
+        android:label="fragment_auth_user"
+        tools:layout="@layout/fragment_auth_user">
+        <action
+            android:id="@+id/action_authUserFragment_to_userInformationFragment"
+            app:destination="@id/userInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInformationFragment"
+        android:name="com.example.presentation.ui.fragments.information.UserInformationFragment"
+        android:label="fragment_user_information"
+        tools:layout="@layout/fragment_user_information">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+    </fragment>
+</navigation>
